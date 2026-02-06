@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝙆𝙉𝙄𝙏𝙏𝙀𝘿 | Street Archive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/gh/projectnoonan/font-gilroy@master/index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Pantone Cloud Dancer - A sophisticated off-white */
+      --color-bg: #F0EEE9; 
+      --color-text: #000000;
+      --color-brand: #A0A0A0; /* Industrial Gray */
+      --rule-color: rgba(0,0,0,0.04);
+    }
+    body { 
+      font-family: 'Gilroy', sans-serif; 
+      -webkit-font-smoothing: antialiased;
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      letter-spacing: 0.02em;
+    }
+    
+    .brand-name {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-style: italic;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      display: inline-block;
+      color: var(--color-brand);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      text-shadow: 0 0 1px rgba(0,0,0,0.01);
+    }
+
+    .brand-name:hover {
+      color: #FFFFFF;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .fade-in {
+      animation: fadeIn 2.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .tracking-luxury {
+      letter-spacing: 0.5em;
+    }
+    
+    .tracking-tight-bold {
+      letter-spacing: -0.03em;
+    }
+
+    ::-webkit-scrollbar { width: 1px; }
+    ::-webkit-scrollbar-thumb { background: #000; }
+    
+    /* Subtle grid for editorial feel */
+    .math-grid {
+      background-image: 
+        linear-gradient(to right, var(--rule-color) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--rule-color) 1px, transparent 1px);
+      background-size: 150px 150px;
+    }
+  </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "react/": "https://esm.sh/react@^19.2.4/",
+      "react": "https://esm.sh/react@^19.2.4",
+      "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+      "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+      "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+    }
+  }
+  </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="selection:bg-black selection:text-white overflow-x-hidden math-grid">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
